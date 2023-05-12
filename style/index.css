@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: rgb(166, 230, 241);
 }
 
 header {
@@ -72,6 +73,7 @@ section{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 3%;
 }
 
 section div{
@@ -87,4 +89,34 @@ section img{
 section h3{
     font-size: 18px;
     font-weight: bold;
+    color: blueviolet;
+}
+
+@media(max-width:500px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav a{
+        text-align: center;
+    }
+    main{
+        width: 90vw;
+        height: 47vw;
+        margin-top: 5%;
+        padding: ;
+    }
+    section{
+        padding: 5vw;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    section div{
+        width: 40vw;
+    }
 }
